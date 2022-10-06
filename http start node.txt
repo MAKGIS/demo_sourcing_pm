@@ -1,0 +1,6 @@
+
+> npm i
+
+> ng run stroyka:serve-ssr -o
+
+> node dist/stroyka/server/main.js
