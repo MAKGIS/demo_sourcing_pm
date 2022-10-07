@@ -5,7 +5,7 @@
 
 > node dist/stroyka/server/main.js
 
-// ------------------------------
+// --- deploy to GitHub ---------------------------
 
 
 > npm run build:ssr
