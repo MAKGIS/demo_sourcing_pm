@@ -5,4 +5,7 @@
 
 > node dist/stroyka/server/main.js
 
+// ------------------------------
 
+
+> npm run build:ssr
