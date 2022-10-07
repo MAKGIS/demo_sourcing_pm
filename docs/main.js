@@ -516,7 +516,7 @@ PageHomeOneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! d:\Net_Core\Sasha_Belgija\Stroyka_All\demo_sourcing_pm\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! d:\Net_Core\Sasha_Belgija\Stroyka_All\pimalion-analysis-demo-main\src\main.ts */"zUnb");
 
 
 /***/ }),

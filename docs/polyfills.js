@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! d:\Net_Core\Sasha_Belgija\Stroyka_All\demo_sourcing_pm\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! d:\Net_Core\Sasha_Belgija\Stroyka_All\pimalion-analysis-demo-main\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
