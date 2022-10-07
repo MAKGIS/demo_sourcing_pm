@@ -1,5 +1,5 @@
 {
-  "name": "demo_sourcing_pm",
+  "name": "stroyka",
   "version": "1.15.0",
   "scripts": {
     "ng": "ng",
@@ -11,10 +11,10 @@
     "sprite": "svg-sprite --config src/sprite-config.json src/svg/*.svg",
     "start:ssr": "npm run build:ssr && npm run serve:ssr",
     "dev:ssr": "ng run stroyka:serve-ssr",
-    "serve:ssr": "node dist/demo_sourcing_pm/server/main.js",
+    "serve:ssr": "node dist/stroyka/server/main.js",
     "build:ssr": "ng build --prod && ng run stroyka:server:production",
     "prerender": "ng run stroyka:prerender",
-    "deploy": "ng build --prod --base-href https://MAKGIS.github.io/demo_sourcing_pm/ && npx ngh --dir=dist/demo_sourcing_pm/browser"
+    "deploy": "ng build --prod --base-href https://MAKGIS.github.io/pimalion-analysis-demo/ && npx ngh --dir=dist/stroyka/browser"
   },
   "private": true,
   "dependencies": {
