@@ -58,10 +58,11 @@ export class PimalionCloudService {
     }
 
     // return this.http.post<any[]>(`${environment.pimalionCloudUrl}/pimalion_demo2_api/api/product/search`, body, httpOptions)
-    return this.http.post<any[]>(`${environment.pimalionCloudUrl}/api/product/search`, body, httpOptions)
+    // return this.http.post<any[]>(`${environment.pimalionCloudUrl}/api/product/search`, body, httpOptions)
+    return this.http.get<any[]>(`${environment.pimalionCloudUrl}/api/config?publishingToken=undefined`, httpOptions)
     .pipe(
              tap((items: any) => {
-                 // console.log('*srv*** PimalionCloudService.getCategoriesList() items -> %O', items);
+                  console.log('*srv*** PimalionCloudService.getCategoriesList() items -> %O', items);
              }),
             catchError((err: any): any => {
                 console.log('*srv*** Error PimalionCloudService.getCategoriesList() -> %O', err);

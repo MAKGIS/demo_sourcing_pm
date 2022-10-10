@@ -51,7 +51,7 @@ const routes: Routes = [
     },
     {
         path: 'categories',
-        pathMatch: 'full',
+        // pathMatch: 'full',
         component: PagePimalionCategoriesComponent
     },
     {

@@ -1,6 +1,6 @@
 
-
 import { Component, OnDestroy, OnInit } from '@angular/core';
+
 
 import { Observable, Subject, merge } from 'rxjs';
 import { takeUntil, tap } from 'rxjs/operators';
@@ -39,6 +39,7 @@ export class PagePimalionCategoriesComponent implements OnInit, OnDestroy {
 
     ngOnInit(): void {
 
+        // console.log("------ PagePimalionCategoriesComponent --------");
         // this.brands$ = this.shopService.getPopularBrands();
 /*
         this.popularCategories$ = this.shopService.getCategoriesBySlug([
@@ -51,10 +52,18 @@ export class PagePimalionCategoriesComponent implements OnInit, OnDestroy {
         ], 1);
 */
         const body = {
+
                 groupFields: [
+                    /* // Categories
                     {
                         key: 'Nomenclature Famille fournisseur',
                         value: null
+                    }
+                    */
+                   // Test !!!
+                    {
+                        "key": "Marque",
+                        "value": null
                     }
                 ],
                 selection: [],

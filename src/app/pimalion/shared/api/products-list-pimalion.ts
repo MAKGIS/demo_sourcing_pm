@@ -28,7 +28,7 @@ interface FilterListValueDef {
 type FilterValueDef = number | FilterListValueDef[];
 
 
-export function getCategoriesPimalion(pimalionCategories: any): Observable<Category[]> {
+export function getCategoriesPimalion_Old(pimalionCategories: any): Observable<Category[]> {
 
     // console.log(`<<< function getCategoriesPimalion pimalionCategories -> %O`, pimalionCategories);
 
@@ -50,6 +50,33 @@ export function getCategoriesPimalion(pimalionCategories: any): Observable<Categ
         // console.log(`<<< function getCategoriesPimalion brandCor -> %O`, categoryCor);
         pimalionCategoriesCor.push(categoryCor);
     });
+
+
+    return timer(0).pipe(map(() => JSON.parse(JSON.stringify(pimalionCategoriesCor))));
+}
+
+export function getCategoriesPimalion(pimalionCategories: any): Observable<Category[]> {
+
+    // console.log(`<<< function getCategoriesPimalion pimalionCategories -> %O`, pimalionCategories);
+
+    const pimalionCategoriesCor: Category[] = [];
+
+
+    for (let i = 0; i < pimalionCategories.categories.length; i++) {
+        const categoryCor: Category = {
+            id: (i).toString(),
+            type: 'shop',
+            name: pimalionCategories.categories[i],
+            slug: pimalionCategories.categories[i],
+            path: null,
+            image: 'assets/images/logos/logo-1.png',        // ???
+            items: i+1,
+            customFields: {}
+        };
+
+        // console.log(`<<< function getCategoriesPimalion brandCor -> %O`, categoryCor);
+        pimalionCategoriesCor.push(categoryCor);
+    };
 
 
     return timer(0).pipe(map(() => JSON.parse(JSON.stringify(pimalionCategoriesCor))));

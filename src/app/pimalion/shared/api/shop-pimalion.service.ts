@@ -231,7 +231,7 @@ export class ShopPimalionService {
 
                     const productsList = getProductsListPimalion(categorySlug, options, pimalionBody);
 
-                    // console.log(`<<< ShopPimalionService.getProductsList() Output shopCategory -> %O`, productsList);
+                    console.log(`<<< ShopPimalionService.getProductsList() Output shopCategory -> %O`, productsList);
 
                     return productsList;
                 })
@@ -324,11 +324,13 @@ export class ShopPimalionService {
             .pipe(
                 switchMap(pimalionItems => {
 
-                    // console.log(`>>> ShopPimalionService.CategoriesList() Input pimalionCategories -> %O`, pimalionItems);
+                   // console.log(`### ShopPimalionService.CategoriesList() Input pimalionCategories -> %O`, pimalionItems);
 
-                    const categories = getCategoriesPimalion(pimalionItems);
+                    const categories$ = getCategoriesPimalion(pimalionItems);
 
-                    return categories;
+                   // console.log(`### ShopPimalionService.CategoriesList() Input categories -> %O`, categories);
+
+                    return categories$;
                 })
             );
     }
