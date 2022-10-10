@@ -38,3 +38,7 @@ index.html
    "deploy": "ng build --prod --base-href https://makgis.github.io/demo_sourcing_pm/ && npx ngh --dir=docs"
  
 > npm run deploy
+
+> commit -m "comm 01"
+
+> push ...
